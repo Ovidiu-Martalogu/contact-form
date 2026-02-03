@@ -7,6 +7,8 @@ export function insertFormContact(numberOfCells) {
         const createDiv = document.createElement('div')
         const labelElem = document.createElement('label');
         const inputElem = document.createElement('input');
+        inputElem.type = 'text';
+        inputElem.setAttribute('name','name');
         inputElem.classList.add('lastName')
         formContact.append(createDiv)
         createDiv.append(labelElem)
